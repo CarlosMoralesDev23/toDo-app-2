@@ -5,6 +5,7 @@
 
 import todoStore from '../store/todo.store';
 import html from './app.html?raw'
+import { renderTodos } from './use-cases';
 
 /**
  * 
@@ -14,6 +15,7 @@ export const App = (elementId)=>{
 
     const displayTodos = ()=>{
         const todos = todoStore.getTodos(todoStore.getCurrentFilter());
+        renderTodos()
     }
 
 
