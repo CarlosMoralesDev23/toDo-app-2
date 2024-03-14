@@ -30,6 +30,11 @@ const loadStore = ()=>{
     throw new Error('Not implemented')
 }
 
+const getTodos = ( filter = Filters.All )=>{
+    throw new Error("Not implemented");
+
+}
+
 /**
  * 
  * @param {String} description 
@@ -74,6 +79,7 @@ export default {
     deleteCompleted,
     deletTodo,
     getCurrentFilter,
+    getTodos,
     initStore,
     loadStore,
     setFilter,
