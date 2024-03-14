@@ -82,11 +82,11 @@ const deleteCompleted = () => {
 
 
 const setFilter = (newFilter = Filters.All) => {
-    throw new Error("Not implemented");
+    state.filter = newFilter;
 };
 
 const getCurrentFilter = () => {
-    throw new Error("Not implemented");
+    return state.filter;
 };
 
 
