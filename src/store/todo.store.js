@@ -21,3 +21,11 @@ const state = {
     filter : Filters.All,
 }
 
+const initStore = ()=>{
+    console.log('InitStore 🍉')
+}
+
+export default{
+    initStore,
+    
+}
