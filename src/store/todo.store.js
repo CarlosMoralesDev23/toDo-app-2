@@ -71,7 +71,7 @@ const toggleTodo = (todoId) => {
  * @param {String} todoId 
  */
 const deletTodo = (todoId) => {
-    throw new Error("Not implemented");
+    state.todos = state.todos.filter( todo => todo.id !== todoId)
 };
 
 
