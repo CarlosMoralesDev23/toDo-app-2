@@ -23,15 +23,22 @@ const state = {
 
 const initStore = ()=>{
     // console.log(state)
+    loadStore()
     console.log('InitStore 🍉')
 }
 
 const loadStore = ()=>{
-    throw new Error('Not implemented')
+    if ( !localStorage.getItem('state')) return
+
+    const {todos = [], filter = Filters.All } = JSON.parse( localStorage.getItem('state'))
+
+    state.todos = todos;
+    state.filter = filter;
+
 }
 
 const saveStateTolocalStorage = ()=>{
-    localStorage.setItem('state', 'Hola Mundo')
+    localStorage.setItem('state', JSON.stringify(state))
 }
 
 const getTodos = ( filter = Filters.All )=>{
