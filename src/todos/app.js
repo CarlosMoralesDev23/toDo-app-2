@@ -106,10 +106,10 @@ export const App = (elementId)=>{
                 case 'Todos':
                     todoStore.setFilter(Filters.All)
                     break;
-                case 'Pending':
+                case 'Pendientes':
                     todoStore.setFilter(Filters.Pending)
                     break;
-                case 'Completed':
+                case 'Completados':
                     todoStore.setFilter(Filters.Completed)
                     break;
             
